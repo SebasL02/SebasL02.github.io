@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exportación — Green Gold Enterprises FZCo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="exportacion.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar"><div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Green Gold Enterprises"><div class="nav-logo-mark">✦</div><div class="nav-logo-text"><span class="nav-brand">GREEN GOLD</span><span class="nav-brand-sub">ENTERPRISES FZCo</span></div></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="quienes-somos.html" class="nav-link" data-i18n="nav.about">Quiénes Somos</a></li>
+      <li><a href="productos.html" class="nav-link" data-i18n="nav.products">Productos</a></li>
+      <li><a href="exportacion.html" class="nav-link" data-i18n="nav.export">Exportación</a></li>
+      <li><a href="infraestructura.html" class="nav-link" data-i18n="nav.infra">Infraestructura</a></li>
+      <li><a href="calidad.html" class="nav-link" data-i18n="nav.quality">Calidad</a></li>
+      <li><a href="cotizacion.html" class="nav-link" data-i18n="nav.quote">Cotización</a></li>
+      <li><a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-current" aria-label="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span><span class="lang-code">ES</span>
+        <svg class="lang-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="lang-dropdown" role="menu">
+        <button class="lang-opt active" data-lang="es"><span>🇪🇸</span> Español</button>
+        <button class="lang-opt" data-lang="en"><span>🇬🇧</span> English</button>
+        <button class="lang-opt" data-lang="pt"><span>🇧🇷</span> Português</button>
+        <button class="lang-opt" data-lang="fr"><span>🇫🇷</span> Français</button>
+        <button class="lang-opt" data-lang="zh"><span>🇨🇳</span> 中文</button>
+        <button class="lang-opt" data-lang="ar"><span>🇦🇪</span> العربية</button>
+      </div>
+    </div>
+    <a href="cotizacion.html" class="nav-cta" data-i18n="nav.cta">Solicitar Cotización</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div></nav>
+
+  <!-- ══ HERO CON IMAGEN BARCO ══ -->
+  <header class="exp-hero">
+    <div class="exp-hero__bg">
+      <img src="img/4_Exportacion/Banner_superior_eexp.jpeg" alt="Puerto de carga Dubai al atardecer — Green Gold Enterprises exportación global" loading="eager" />
+      <div class="exp-hero__overlay"></div>
+    </div>
+    <div class="exp-hero__content">
+      <div class="exp-hero__text">
+        <p class="eh-eyebrow" data-i18n="exp.ph.eyebrow">Logística Global</p>
+        <h1 class="eh-title" data-i18n="exp.ph.title"><span>Exportación</span></h1>
+        <p class="eh-desc"  data-i18n="exp.ph.desc">Enviamos a cualquier destino del mundo. Infraestructura logística construida durante más de dos décadas de operaciones internacionales.</p>
+        <div class="eh-incoterms">
+          <span class="inco-badge">EXW</span><span class="inco-badge">FOB</span>
+          <span class="inco-badge">CFR</span><span class="inco-badge">CIF</span>
+          <span class="inco-badge">DDP</span>
+        </div>
+      </div>
+      <div class="eh-stats">
+        <div class="ehs-item"><span class="ehs-n">+13</span><span class="ehs-l" data-i18n="stats.countries">Países</span></div>
+        <div class="ehs-sep"></div>
+        <div class="ehs-item"><span class="ehs-n">4</span><span class="ehs-l" data-i18n="exp.hero.continents">Continentes</span></div>
+        <div class="ehs-sep"></div>
+        <div class="ehs-item"><span class="ehs-n">+25</span><span class="ehs-l" data-i18n="stats.exp">Años</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html" data-i18n="nav.home">Inicio</a><span class="breadcrumb-sep">/</span>
+    <span data-i18n="exp.bread">Exportación</span>
+  </div>
+
+  <!-- ══ 1. LOGÍSTICA AÉREA — imagen izquierda ══ -->
+  <section class="exp-split exp-split--img-left">
+    <div class="exp-split__img fade-in">
+      <img src="img/4_Exportacion/Logistica_aerea.jpeg" alt="Avión de carga siendo cargado en Dubai al atardecer" loading="lazy" />
+      <div class="exp-split__img-badge">
+        <span>✈</span>
+        <p data-i18n="exp.aerea.badge">Logística Aérea & Marítima</p>
+      </div>
+    </div>
+    <div class="exp-split__text fade-in">
+      <p class="section-eyebrow" data-i18n="exp.eyebrow">Infraestructura logística</p>
+      <h2 class="section-title" data-i18n="exp.title">Exportación Global</h2>
+      <p class="body-text" data-i18n="exp.p1">Green Gold Enterprises FZCo opera una infraestructura logística de exportación construida durante más de dos décadas de operaciones internacionales. Gestionamos envíos por vía aérea y marítima hacia cualquier destino del mundo, bajo los términos EXW, FOB, CFR, CIF y DDP.</p>
+      <p class="body-text" data-i18n="exp.p2">A través de nuestra red de agentes de forwarding en múltiples países y nuestras cuentas corporativas con DHL, FedEx, USPS y Serpost, garantizamos que cada envío sea manejado con eficiencia, seguridad y total confidencialidad.</p>
+      <div class="exp-carriers">
+        <div class="ec-item"><span class="ec-icon">✈</span><span>DHL Internacional</span></div>
+        <div class="ec-item"><span class="ec-icon">✈</span><span>FedEx Internacional</span></div>
+        <div class="ec-item"><span class="ec-icon">📦</span><span>USPS (USA)</span></div>
+        <div class="ec-item"><span class="ec-icon">📦</span><span>Serpost (Perú)</span></div>
+        <div class="ec-item"><span class="ec-icon">🚢</span><span data-i18n="exp.carriers.network">Red global de forwarding</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 2. ALMACÉN & EMPAQUE — imagen derecha ══ -->
+  <section class="exp-split exp-split--img-right exp-split--grey">
+    <div class="exp-split__text fade-in">
+      <p class="section-eyebrow" data-i18n="exp.almacen.eyebrow">Preparación & Empaque</p>
+      <h2 class="section-title" data-i18n="exp.almacen.title">Del almacén a su puerta</h2>
+      <p class="body-text" data-i18n="exp.almacen.p1">Desde una muestra de 50–100 gramos hasta contenedores completos — sin barrera de entrada. Cada pedido recibe el mismo nivel de atención, empaque profesional y documentación completa.</p>
+      <p class="body-text" data-i18n="exp.almacen.p2">Nuestros almacenes en Lima (Perú) y Bronson (Florida) garantizan disponibilidad inmediata de inventario y tiempos de despacho de 24 a 72 horas según el destino.</p>
+      <div class="exp-vol-box">
+        <div class="evb-item">
+          <span class="evb-icon">🔬</span>
+          <div>
+            <strong data-i18n="exp.vol.sample">Muestra mínima</strong>
+            <p>50 – 100 gramos</p>
+          </div>
+        </div>
+        <div class="evb-div"></div>
+        <div class="evb-item">
+          <span class="evb-icon">📦</span>
+          <div>
+            <strong data-i18n="exp.vol.bulk">Pedido estándar</strong>
+            <p>1 kg – 1 tonelada</p>
+          </div>
+        </div>
+        <div class="evb-div"></div>
+        <div class="evb-item">
+          <span class="evb-icon">🚢</span>
+          <div>
+            <strong data-i18n="exp.vol.container">Contenedor</strong>
+            <p data-i18n="exp.vol.full">Volumen completo</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="exp-split__img fade-in">
+      <img src="img/4_Exportacion/Almacen_empaque.jpeg" alt="Almacén de empaque — trabajadores preparando pedidos de hierbas medicinales" loading="lazy" />
+      <div class="exp-split__img-badge exp-split__img-badge--right">
+        <span>📦</span>
+        <p data-i18n="exp.almacen.badge">Despacho 24–72h</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 3. ORÍGENES DE MATERIA PRIMA — imagen izquierda ══ -->
+  <section class="exp-split exp-split--img-left exp-split--dark">
+    <div class="exp-split__img fade-in">
+      <img src="img/4_Exportacion/Origenes_materia.jpeg" alt="Puerto marítimo — barco portacontenedores en Dubai" loading="lazy" />
+      <div class="exp-split__img-badge">
+        <span>🌍</span>
+        <p data-i18n="exp.origins.badge">Materia Prima de 6 Países</p>
+      </div>
+    </div>
+    <div class="exp-split__text fade-in">
+      <p class="section-eyebrow" data-i18n="exp.origins.eyebrow">Trazabilidad total</p>
+      <h2 class="section-title" data-i18n="exp.origins.title2">Orígenes de Materia Prima</h2>
+      <p class="body-text" data-i18n="exp.origins.p">Trazamos cada producto desde su punto de origen hasta la entrega final. Trabajamos directamente con productores certificados en los principales países proveedores de ingredientes botánicos del mundo.</p>
+      <div class="exp-origins-grid">
+        <div class="eo-item"><span>🇧🇷</span><div><strong>Brasil</strong><p data-i18n="exp.or.br">Guaraná, açaí, copaiba</p></div></div>
+        <div class="eo-item"><span>🇵🇪</span><div><strong>Perú</strong><p data-i18n="exp.or.pe">Maca, camu camu, hierbas amazónicas</p></div></div>
+        <div class="eo-item"><span>🇲🇽</span><div><strong>México</strong><p data-i18n="exp.or.mx">Chía, agaves, hierbas medicinales</p></div></div>
+        <div class="eo-item"><span>🇮🇳</span><div><strong>India</strong><p data-i18n="exp.or.in">Ashwagandha, cúrcuma, pimienta negra</p></div></div>
+        <div class="eo-item"><span>🇵🇰</span><div><strong>Pakistán</strong><p data-i18n="exp.or.pk">Especias premium, semillas</p></div></div>
+        <div class="eo-item"><span>🇮🇩</span><div><strong>Indonesia</strong><p data-i18n="exp.or.id">Canela, clavo, jengibre</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 4. PAÍSES — TICKER MARQUEE ══ -->
+  <!-- PAÍSES -->
+  <section class="section" id="global-preview">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow" data-i18n="global.eyebrow">Presencia Global</p>
+        <h2 class="section-title"  data-i18n="global.title">Más de 13 países</h2>
+        <p class="section-desc"   data-i18n="global.desc">Operaciones activas en América, Europa, Asia y Oceanía.</p>
+      </div>
+      <div class="countries-grid fade-in">
+        <span>🇦🇪 UAE</span><span>🇺🇸 USA</span><span>🇵🇪 Perú</span><span>🇨🇦 Canadá</span>
+        <span>🇲🇽 México</span><span>🇧🇷 Brasil</span><span>🇬🇧 Reino Unido</span><span>🇳🇱 Holanda</span>
+        <span>🇨🇳 China</span><span>🇮🇳 India</span><span>🇵🇰 Pakistán</span><span>🇹🇭 Tailandia</span>
+        <span>🇮🇩 Indonesia</span><span>🇫🇯 Fiji</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ 5. GARANTÍA — imagen derecha ══ -->
+  <section class="exp-split exp-split--img-right">
+    <div class="exp-split__text fade-in">
+      <p class="section-eyebrow" data-i18n="exp.garantia.eyebrow">Compromiso Total</p>
+      <h2 class="section-title" data-i18n="exp.garantia.title">Garantía de Entrega</h2>
+      <p class="body-text" data-i18n="exp.garantia.p1">Si un producto no llega en las condiciones acordadas, lo cambiamos o devolvemos el 100% de su dinero. Sin excusas. Sin demoras. Porque su confianza es la base de todo lo que hacemos.</p>
+      <p class="body-text" data-i18n="exp.garantia.p2">Cada envío incluye documentación completa: factura comercial, packing list, certificado de origen, certificado fitosanitario, COA por lote y todos los documentos requeridos por su país de destino.</p>
+      <div class="exp-docs">
+        <div class="ed-item">✅ <span data-i18n="exp.doc1">Factura Comercial</span></div>
+        <div class="ed-item">✅ <span data-i18n="exp.doc2">Packing List</span></div>
+        <div class="ed-item">✅ <span data-i18n="exp.doc3">Bill of Lading</span></div>
+        <div class="ed-item">✅ <span data-i18n="exp.doc4">Certificado de Origen</span></div>
+        <div class="ed-item">✅ <span data-i18n="exp.doc5">Cert. Fitosanitario</span></div>
+        <div class="ed-item">✅ <span data-i18n="exp.doc6">COA por lote</span></div>
+      </div>
+      <a href="cotizacion.html" class="btn btn--gold" style="margin-top:20px;" data-i18n="cta.btn1">Solicitar Cotización</a>
+    </div>
+    <div class="exp-split__img fade-in">
+      <img src="img/4_Exportacion/Garantia_entrega.jpeg" alt="Apretón de manos — garantía y confianza en las relaciones comerciales de Green Gold" loading="lazy" />
+      <div class="exp-split__img-badge exp-split__img-badge--right">
+        <span>🤝</span>
+        <p data-i18n="exp.garantia.badge">100% Garantizado</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-mark">✦</div><div><span class="footer-brand-name">GREEN GOLD</span><span class="footer-brand-sub"> ENTERPRISES FZCo</span></div></div><p class="footer-slogan">"Global Sourcing. Natural Origins. Trusted Delivery."</p></div>
+      <div class="footer-links">
+        <div class="footer-col"><p class="footer-col-title" data-i18n="footer.company">Empresa</p><a href="quienes-somos.html" data-i18n="nav.about">Quiénes Somos</a><a href="infraestructura.html" data-i18n="nav.infra">Infraestructura</a><a href="calidad.html" data-i18n="nav.quality">Calidad</a></div>
+        <div class="footer-col"><p class="footer-col-title" data-i18n="footer.products">Productos</p><a href="productos.html" data-i18n="nav.products">Catálogo</a><a href="exportacion.html" data-i18n="nav.export">Exportación</a><a href="cotizacion.html" data-i18n="nav.quote">Cotización</a></div>
+        <div class="footer-col"><p class="footer-col-title" data-i18n="nav.contact">Contacto</p><a href="mailto:sales@greengoldenterprises.ae">sales@greengoldenterprises.ae</a><a href="https://wa.me/971543977454" target="_blank" rel="noopener">WhatsApp +971 54 397 7454</a><a href="contacto.html" data-i18n="footer.alloffices">Ver todas las sedes</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="footer.copy">© 2025 Green Gold Enterprises FZCo. Dubai, UAE. Todos los derechos reservados.</p><p>Building A1, Dubai Digital Park, Dubai Silicon Oasis, UAE</p></div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="i18n.js"></script>
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cotización — Green Gold Enterprises FZCo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="cot-con.css" />
+</head>
+<body>
+
+  <nav class="navbar" id="navbar"><div class="nav-inner">
+    <a href="index.html" class="nav-logo"><div class="nav-logo-mark">✦</div><div class="nav-logo-text"><span class="nav-brand">GREEN GOLD</span><span class="nav-brand-sub">ENTERPRISES FZCo</span></div></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="quienes-somos.html" class="nav-link" data-i18n="nav.about">Quiénes Somos</a></li>
+      <li><a href="productos.html" class="nav-link" data-i18n="nav.products">Productos</a></li>
+      <li><a href="exportacion.html" class="nav-link" data-i18n="nav.export">Exportación</a></li>
+      <li><a href="infraestructura.html" class="nav-link" data-i18n="nav.infra">Infraestructura</a></li>
+      <li><a href="calidad.html" class="nav-link" data-i18n="nav.quality">Calidad</a></li>
+      <li><a href="cotizacion.html" class="nav-link" data-i18n="nav.quote">Cotización</a></li>
+      <li><a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-current" aria-label="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span><span class="lang-code">ES</span>
+        <svg class="lang-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="lang-dropdown" role="menu">
+        <button class="lang-opt active" data-lang="es"><span>🇪🇸</span> Español</button>
+        <button class="lang-opt" data-lang="en"><span>🇬🇧</span> English</button>
+        <button class="lang-opt" data-lang="pt"><span>🇧🇷</span> Português</button>
+        <button class="lang-opt" data-lang="fr"><span>🇫🇷</span> Français</button>
+        <button class="lang-opt" data-lang="zh"><span>🇨🇳</span> 中文</button>
+        <button class="lang-opt" data-lang="ar"><span>🇦🇪</span> العربية</button>
+      </div>
+    </div>
+    <a href="cotizacion.html" class="nav-cta" data-i18n="nav.cta">Solicitar Cotización</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div></nav>
+
+  <!-- HERO -->
+  <header class="cc-hero">
+    <div class="cc-hero__bg">
+      <img src="img/7_Cotizacion/Banner_superior.jpeg" alt="Dubai Marina al atardecer — Green Gold Enterprises" loading="eager" />
+      <div class="cc-hero__overlay"></div>
+    </div>
+    <div class="cc-hero__content">
+      <p class="cch-eyebrow" data-i18n="cot.ph.eyebrow">Solicitud B2B</p>
+      <h1 class="cch-title" data-i18n="cot.ph.title">Solicitar <span>Cotización</span></h1>
+      <p class="cch-desc" data-i18n="cot.ph.desc">Respuesta garantizada en menos de 24 horas. Canal principal: WhatsApp.</p>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html" data-i18n="nav.home">Inicio</a><span class="breadcrumb-sep">/</span>
+    <span data-i18n="cot.bread">Cotización</span>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <section class="cot-main">
+    <div class="cot-main__bg">
+      <img src="img/7_Cotizacion/Fondo_formulario.jpeg" alt="" aria-hidden="true" loading="lazy" />
+      <div class="cot-main__overlay"></div>
+    </div>
+
+    <div class="cot-main__inner">
+
+      <!-- FORMULARIO -->
+      <div class="cot-form-box fade-in">
+        <div class="cfb-header">
+          <p class="cfb-eyebrow" data-i18n="cot.f.form.eyebrow">Formulario de contacto</p>
+          <h2 class="cfb-title" data-i18n="cot.f.form.title">Cuéntenos su requerimiento</h2>
+        </div>
+        <form class="quote-form" id="quoteForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-name" data-i18n="cot.f.name">Nombre completo *</label>
+              <input type="text" id="f-name" data-i18n-ph="cot.f.name.ph" placeholder="Su nombre" required />
+            </div>
+            <div class="form-field">
+              <label for="f-co" data-i18n="cot.f.co">Empresa / Organización</label>
+              <input type="text" id="f-co" data-i18n-ph="cot.f.co.ph" placeholder="Nombre de su empresa" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-country" data-i18n="cot.f.country">País *</label>
+              <input type="text" id="f-country" data-i18n-ph="cot.f.country.ph" placeholder="Su país" required />
+            </div>
+            <div class="form-field">
+              <label for="f-email" data-i18n="cot.f.email">Correo electrónico *</label>
+              <input type="email" id="f-email" data-i18n-ph="cot.f.email.ph" placeholder="email@empresa.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-phone" data-i18n="cot.f.phone">Teléfono / WhatsApp *</label>
+              <input type="tel" id="f-phone" data-i18n-ph="cot.f.phone.ph" placeholder="+971 54 000 0000" required />
+            </div>
+            <div class="form-field">
+              <label for="f-prod" data-i18n="cot.f.prod">Producto de interés *</label>
+              <input type="text" id="f-prod" data-i18n-ph="cot.f.prod.ph" placeholder="Nombre del producto" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="f-qty" data-i18n="cot.f.qty">Cantidad estimada</label>
+              <input type="text" id="f-qty" data-i18n-ph="cot.f.qty.ph" placeholder="ej: 50 kg, 1 tonelada…" />
+            </div>
+            <div class="form-field">
+              <label for="f-inco" data-i18n="cot.f.inco">Término de entrega preferido</label>
+              <select id="f-inco">
+                <option value="" data-i18n="cot.f.inco.ph">Seleccionar…</option>
+                <option>EXW</option><option>FOB</option><option>CFR</option>
+                <option>CIF</option><option>DDP</option>
+                <option data-i18n="cot.f.nopreference">Sin preferencia</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-field" style="grid-column:span 2;">
+            <label for="f-notes" data-i18n="cot.f.notes">Notas adicionales</label>
+            <textarea id="f-notes" rows="4" data-i18n-ph="cot.f.notes.ph" placeholder="Requerimientos especiales, certificaciones, especificaciones técnicas…"></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full" id="submitBtn" data-i18n="cot.f.submit">Enviar Solicitud de Cotización</button>
+          <p class="form-note" data-i18n="cot.f.note">Respuesta garantizada en menos de 24 horas. Responsable: Juan Manuel Narvarte.</p>
+        </form>
+        <div class="form-success" id="formSuccess" hidden>
+          <span style="font-size:36px;display:block;margin-bottom:16px;">✦</span>
+          <h3 data-i18n="cot.success.title">¡Solicitud enviada!</h3>
+          <p data-i18n="cot.success.desc">Juan Manuel Narvarte lo contactará en menos de 24 horas por WhatsApp o email.</p>
+          <a href="https://wa.me/971543977454" target="_blank" rel="noopener" class="btn btn--gold" style="margin-top:16px;" data-i18n="cot.success.btn">Contactar por WhatsApp ahora</a>
+        </div>
+      </div>
+
+      <!-- SIDEBAR -->
+      <div class="cot-sidebar fade-in">
+
+        <!-- RESPONSABLE -->
+        <div class="cot-person-card">
+          <div class="cpc-img">
+            <img src="img/7_Cotizacion/Responsable_Juan_Narvarte.jpeg" alt="Juan Manuel Narvarte — Responsable comercial Green Gold Enterprises" loading="lazy" />
+          </div>
+          <div class="cpc-body">
+            <p class="cpc-role" data-i18n="cot.person.role">Responsable Comercial</p>
+            <h3 class="cpc-name">Juan Manuel Narvarte</h3>
+            <p class="cpc-promise" data-i18n="cot.person.promise">"Respondo personalmente cada solicitud en menos de 24 horas. Sin importar el idioma, el volumen o la ubicación."</p>
+            <div class="cpc-contacts">
+              <a href="https://wa.me/971543977454" target="_blank" rel="noopener" class="cpc-wa">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                +971 54 397 7454
+              </a>
+              <a href="mailto:sales@greengoldenterprises.ae" class="cpc-email">✉ sales@greengoldenterprises.ae</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- INFO CARDS -->
+        <div class="cot-info-cards">
+          <div class="cic-item">
+            <span class="cic-icon">⚡</span>
+            <div>
+              <strong data-i18n="cot.info.speed.title">Respuesta rápida</strong>
+              <p data-i18n="cot.info.speed.desc">Menos de 24 horas · 365 días · Todos los idiomas</p>
+            </div>
+          </div>
+          <div class="cic-item">
+            <span class="cic-icon">🔬</span>
+            <div>
+              <strong data-i18n="cot.info.sample.title">Muestras disponibles</strong>
+              <p data-i18n="cot.info.sample.desc">Desde 50g hasta pedidos de varios toneladas</p>
+            </div>
+          </div>
+          <div class="cic-item">
+            <span class="cic-icon">📄</span>
+            <div>
+              <strong data-i18n="cot.info.docs.title">Documentación completa</strong>
+              <p data-i18n="cot.info.docs.desc">COA, fichas técnicas, certificados incluidos</p>
+            </div>
+          </div>
+          <div class="cic-item">
+            <span class="cic-icon">🔒</span>
+            <div>
+              <strong data-i18n="cot.info.conf.title">Confidencialidad total</strong>
+              <p data-i18n="cot.info.conf.desc">NDA disponible a solicitud del cliente</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- WHATSAPP DIRECTO -->
+        <a href="https://wa.me/971543977454?text=Hola%2C%20me%20interesa%20solicitar%20una%20cotizaci%C3%B3n." target="_blank" rel="noopener" class="cot-wa-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span data-i18n="cot.wa.btn">Chatear por WhatsApp</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-mark">✦</div><div><span class="footer-brand-name">GREEN GOLD</span><span class="footer-brand-sub"> ENTERPRISES FZCo</span></div></div><p class="footer-slogan">"Global Sourcing. Natural Origins. Trusted Delivery."</p></div>
+      <div class="footer-links">
+        <div class="footer-col"><p class="footer-col-title" data-i18n="footer.company">Empresa</p><a href="quienes-somos.html" data-i18n="nav.about">Quiénes Somos</a><a href="infraestructura.html" data-i18n="nav.infra">Infraestructura</a><a href="calidad.html" data-i18n="nav.quality">Calidad</a></div>
+        <div class="footer-col"><p class="footer-col-title" data-i18n="footer.products">Productos</p><a href="productos.html" data-i18n="nav.products">Catálogo</a><a href="exportacion.html" data-i18n="nav.export">Exportación</a><a href="cotizacion.html" data-i18n="nav.quote">Cotización</a></div>
+        <div class="footer-col"><p class="footer-col-title" data-i18n="nav.contact">Contacto</p><a href="mailto:sales@greengoldenterprises.ae">sales@greengoldenterprises.ae</a><a href="https://wa.me/971543977454" target="_blank" rel="noopener">WhatsApp +971 54 397 7454</a><a href="contacto.html" data-i18n="footer.alloffices">Ver todas las sedes</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="footer.copy">© 2025 Green Gold Enterprises FZCo. Dubai, UAE. Todos los derechos reservados.</p></div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="i18n.js"></script>
+  <script src="cotizacion.js"></script>
+</body>
+</html>

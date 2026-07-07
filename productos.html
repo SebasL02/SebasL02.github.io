@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Productos — Green Gold Enterprises FZCo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="productos.css" />
+  <link rel="stylesheet" href="productos-v2.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar"><div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="Green Gold Enterprises"><div class="nav-logo-mark">✦</div><div class="nav-logo-text"><span class="nav-brand">GREEN GOLD</span><span class="nav-brand-sub">ENTERPRISES FZCo</span></div></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+      <li><a href="quienes-somos.html" class="nav-link" data-i18n="nav.about">Quiénes Somos</a></li>
+      <li><a href="productos.html" class="nav-link" data-i18n="nav.products">Productos</a></li>
+      <li><a href="exportacion.html" class="nav-link" data-i18n="nav.export">Exportación</a></li>
+      <li><a href="infraestructura.html" class="nav-link" data-i18n="nav.infra">Infraestructura</a></li>
+      <li><a href="calidad.html" class="nav-link" data-i18n="nav.quality">Calidad</a></li>
+      <li><a href="cotizacion.html" class="nav-link" data-i18n="nav.quote">Cotización</a></li>
+      <li><a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+    <div class="lang-switcher">
+      <button class="lang-current" aria-label="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
+        <span class="lang-flag">🇪🇸</span><span class="lang-code">ES</span>
+        <svg class="lang-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="lang-dropdown" role="menu">
+        <button class="lang-opt active" data-lang="es"><span>🇪🇸</span> Español</button>
+        <button class="lang-opt" data-lang="en"><span>🇬🇧</span> English</button>
+        <button class="lang-opt" data-lang="pt"><span>🇧🇷</span> Português</button>
+        <button class="lang-opt" data-lang="fr"><span>🇫🇷</span> Français</button>
+        <button class="lang-opt" data-lang="zh"><span>🇨🇳</span> 中文</button>
+        <button class="lang-opt" data-lang="ar"><span>🇦🇪</span> العربية</button>
+      </div>
+    </div>
+    <a href="cotizacion.html" class="nav-cta" data-i18n="nav.cta">Solicitar Cotización</a>
+    <button class="nav-burger" id="navBurger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div></nav>
+
+  <!-- ══════════════════════════════════════
+       HERO CON IMAGEN
+  ══════════════════════════════════════ -->
+  <header class="prod-hero">
+    <div class="prod-hero__bg">
+      <img src="img/3_Productos/Banner_superior.jpeg" alt="Catálogo de ingredientes botánicos — Green Gold Enterprises" loading="eager" />
+      <div class="prod-hero__overlay"></div>
+    </div>
+    <div class="prod-hero__content">
+      <p class="ph-eyebrow" data-i18n="prod.ph.eyebrow">Catálogo 2026</p>
+      <h1 class="ph-title" data-i18n="prod.ph.title">Nuestros <span>Productos</span></h1>
+      <p class="ph-desc" data-i18n="prod.ph.desc">Más de 400 ingredientes botánicos en 7 categorías especializadas.</p>
+      <div class="prod-hero__stats">
+        <div class="phs-item"><span class="phs-n">+400</span><span class="phs-l" data-i18n="stats.prod">Productos</span></div>
+        <div class="phs-sep"></div>
+        <div class="phs-item"><span class="phs-n">7</span><span class="phs-l" data-i18n="prod.hero.cats">Categorías</span></div>
+        <div class="phs-sep"></div>
+        <div class="phs-item"><span class="phs-n">+13</span><span class="phs-l" data-i18n="stats.countries">Países</span></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- BREADCRUMB -->
+  <div class="breadcrumb">
+    <a href="index.html" data-i18n="nav.home">Inicio</a>
+    <span class="breadcrumb-sep">/</span>
+    <span data-i18n="prod.bread">Productos</span>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       CATEGORÍAS VISUALES (TABS CON FOTO)
+  ══════════════════════════════════════ -->
+  <section class="cat-showcase">
+
+    <!-- TABS DE CATEGORÍA -->
+    <div class="cat-tabs-wrap">
+      <div class="cat-tabs" role="tablist" aria-label="Categorías de productos" id="catTabs">
+        <button class="cat-tab active" data-cat="all" data-img="" role="tab" aria-selected="true">
+          <span class="ct-icon">✦</span>
+          <span class="ct-label" data-i18n="prod.filter.all">Todas</span>
+        </button>
+        <button class="cat-tab" data-cat="hierbas" data-img="Portada_cat1.jpeg" role="tab" aria-selected="false">
+          <span class="ct-img-thumb"><img src="img/3_Productos/Portada_cat1.jpeg" alt="" aria-hidden="true" /></span>
+          <span class="ct-label" data-i18n="cat.herbs">Hierbas</span>
+        </button>
+        <button class="cat-tab" data-cat="blends" data-img="Portada_cat2.jpeg" role="tab" aria-selected="false">
+          <span class="ct-img-thumb"><img src="img/3_Productos/Portada_cat2.jpeg" alt="" aria-hidden="true" /></span>
+          <span class="ct-label" data-i18n="cat.blends">Blends</span>
+        </button>
+        <button class="cat-tab" data-cat="especias" data-img="Portada_cat3.jpeg" role="tab" aria-selected="false">
+          <span class="ct-img-thumb"><img src="img/3_Productos/Portada_cat3.jpeg" alt="" aria-hidden="true" /></span>
+          <span class="ct-label" data-i18n="cat.spices">Especias</span>
+        </button>
+        <button class="cat-tab" data-cat="extractos" data-img="Portada_cat4.jpeg" role="tab" aria-selected="false">
+          <span class="ct-img-thumb"><img src="img/3_Productos/Portada_cat4.jpeg" alt="" aria-hidden="true" /></span>
+          <span class="ct-label" data-i18n="cat.extracts">Extractos</span>
+        </button>
+        <button class="cat-tab" data-cat="frutas" data-img="Portada_cat5.jpeg" role="tab" aria-selected="false">
+          <span class="ct-img-thumb"><img src="img/3_Productos/Portada_cat5.jpeg" alt="" aria-hidden="true" /></span>
+          <span class="ct-label" data-i18n="cat.fruits">Frutas</span>
+        </button>
+        <button class="cat-tab" data-cat="organicos" data-img="Portada_cat6.jpeg" role="tab" aria-selected="false">
+          <span class="ct-img-thumb"><img src="img/3_Productos/Portada_cat6.jpeg" alt="" aria-hidden="true" /></span>
+          <span class="ct-label" data-i18n="cat.organic">Orgánicos</span>
+        </button>
+        <button class="cat-tab" data-cat="otros" data-img="Portada_cat7.jpeg" role="tab" aria-selected="false">
+          <span class="ct-img-thumb"><img src="img/3_Productos/Portada_cat7.jpeg" alt="" aria-hidden="true" /></span>
+          <span class="ct-label" data-i18n="cat.others">Otros</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- PANEL DE IMAGEN DE CATEGORÍA -->
+    <div class="cat-panel" id="catPanel" aria-live="polite">
+      <!-- Visible solo cuando hay categoría seleccionada (no "all") -->
+      <div class="cat-panel__img-wrap" id="catPanelImg" hidden>
+        <img id="catPanelPhoto" src="" alt="" loading="lazy" />
+        <div class="cat-panel__overlay"></div>
+        <div class="cat-panel__info">
+         
+          <h2 class="cpi-title" id="catPanelTitle">—</h2>
+          <p class="cpi-desc"  id="catPanelDesc">—</p>
+          <span class="cpi-count" id="catPanelCount">—</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══════════════════════════════════════
+       BARRA DE BÚSQUEDA + FILTRO
+  ══════════════════════════════════════ -->
+  <div class="filter-bar" id="filterBar">
+    <div class="fb-inner">
+      <div class="fb-search">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="text" id="searchInput" data-i18n-ph="prod.search" placeholder="Buscar producto, nombre científico…" autocomplete="off" />
+        <button id="clearBtn" class="fb-clear" aria-label="Limpiar">✕</button>
+      </div>
+
+    </div>
+    <div class="fb-count"><span id="countLabel">296 productos</span></div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       GRID DE PRODUCTOS
+  ══════════════════════════════════════ -->
+  <div class="prod-main">
+    <div class="container">
+      <div class="prod-grid" id="prodGrid"></div>
+      <div class="prod-empty" id="prodEmpty" hidden>
+        <p class="pe-title" data-i18n="prod.empty.title">Sin resultados</p>
+        <p data-i18n="prod.empty.desc">Intenta con otro nombre o cambia de categoría.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="section section--dark" style="padding:60px 32px;">
+    <div class="container" style="text-align:center;">
+      <h2 style="font-family:var(--serif);font-size:clamp(26px,4vw,40px);color:#fff;margin-bottom:14px;" data-i18n="prod.cta.title">¿No encuentra lo que busca?</h2>
+      <p style="color:rgba(255,255,255,.6);margin-bottom:28px;font-size:15px;" data-i18n="prod.cta.desc">Disponemos de +400 productos. Contáctenos.</p>
+      <a href="cotizacion.html" class="btn btn--gold" data-i18n="prod.cta.btn">Solicitar producto específico</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand"><div class="footer-logo"><div class="footer-logo-mark">✦</div><div><span class="footer-brand-name">GREEN GOLD</span><span class="footer-brand-sub"> ENTERPRISES FZCo</span></div></div><p class="footer-slogan">"Global Sourcing. Natural Origins. Trusted Delivery."</p></div>
+      <div class="footer-links">
+        <div class="footer-col"><p class="footer-col-title" data-i18n="footer.company">Empresa</p><a href="quienes-somos.html" data-i18n="nav.about">Quiénes Somos</a><a href="infraestructura.html" data-i18n="nav.infra">Infraestructura</a><a href="calidad.html" data-i18n="nav.quality">Calidad</a></div>
+        <div class="footer-col"><p class="footer-col-title" data-i18n="footer.products">Productos</p><a href="productos.html" data-i18n="nav.products">Catálogo</a><a href="exportacion.html" data-i18n="nav.export">Exportación</a><a href="cotizacion.html" data-i18n="nav.quote">Cotización</a></div>
+        <div class="footer-col"><p class="footer-col-title" data-i18n="nav.contact">Contacto</p><a href="mailto:sales@greengoldenterprises.ae">sales@greengoldenterprises.ae</a><a href="https://wa.me/971543977454" target="_blank" rel="noopener">WhatsApp +971 54 397 7454</a><a href="contacto.html" data-i18n="footer.alloffices">Ver todas las sedes</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p data-i18n="footer.copy">© 2025 Green Gold Enterprises FZCo. Dubai, UAE.</p></div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="i18n.js"></script>
+  <script src="productos.js"></script>
+  <script src="productos-v2.js"></script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Gold Enterprises FZCo — Inicio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Green Gold Enterprises">
+        <div class="nav-logo-mark">✦</div>
+        <div class="nav-logo-text">
+          <span class="nav-brand">GREEN GOLD</span>
+          <span class="nav-brand-sub">ENTERPRISES FZCo</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html"           class="nav-link" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="quienes-somos.html"   class="nav-link" data-i18n="nav.about">Quiénes Somos</a></li>
+        <li><a href="productos.html"       class="nav-link" data-i18n="nav.products">Productos</a></li>
+        <li><a href="exportacion.html"     class="nav-link" data-i18n="nav.export">Exportación</a></li>
+        <li><a href="infraestructura.html" class="nav-link" data-i18n="nav.infra">Infraestructura</a></li>
+        <li><a href="calidad.html"         class="nav-link" data-i18n="nav.quality">Calidad</a></li>
+        <li><a href="cotizacion.html"      class="nav-link" data-i18n="nav.quote">Cotización</a></li>
+        <li><a href="contacto.html"        class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-current" aria-label="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-flag">🇪🇸</span>
+          <span class="lang-code">ES</span>
+          <svg class="lang-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="lang-dropdown" role="menu">
+          <button class="lang-opt active" data-lang="es" role="menuitem"><span>🇪🇸</span> Español</button>
+          <button class="lang-opt" data-lang="en" role="menuitem"><span>🇬🇧</span> English</button>
+          <button class="lang-opt" data-lang="pt" role="menuitem"><span>🇧🇷</span> Português</button>
+          <button class="lang-opt" data-lang="fr" role="menuitem"><span>🇫🇷</span> Français</button>
+          <button class="lang-opt" data-lang="zh" role="menuitem"><span>🇨🇳</span> 中文</button>
+          <button class="lang-opt" data-lang="ar" role="menuitem"><span>🇦🇪</span> العربية</button>
+        </div>
+      </div>
+      <a href="cotizacion.html" class="nav-cta" data-i18n="nav.cta">Solicitar Cotización</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════
+       HERO SLIDER — 3 slides con posicionamiento diferente
+  ═══════════════════════════════════════ -->
+  <section class="hero-slider" id="inicio" aria-label="Presentación principal" role="region">
+
+    <!-- SLIDE 1: Banner_3 — Productos botánicos + Dubai
+         Posición: Centro | Texto claro sobre overlay oscuro dorado -->
+    <div class="slide slide--1 slide--active" data-slide="0">
+      <div class="slide-bg">
+        <img src="img/1_Home/Banner_1.jpeg" alt="Productos botánicos con skyline de Dubai al atardecer" class="slide-img" loading="eager" />
+        <div class="slide-overlay slide-overlay--center-dark"></div>
+      </div>
+      <div class="slide-content slide-content--center">
+        <div class="slide-inner">
+          <p class="slide-eyebrow" data-i18n="hero.eyebrow">Dubai · Perú · Florida · 13+ Países</p>
+          <h1 class="slide-title">
+            <span class="st-1">Green Gold</span>
+            <span class="st-2">Enterprises</span>
+            <span class="st-3">FZCo</span>
+          </h1>
+          <p class="slide-slogan">"Global Sourcing. Natural Origins. Trusted Delivery."</p>
+          <p class="slide-desc" data-i18n="hero.desc">Somos una empresa global especializada en la búsqueda, procesamiento y exportación de productos naturales, suplementos alimenticios, agrícolas y agroindustriales.</p>
+          <div class="slide-actions">
+            <a href="productos.html"  class="btn btn--gold"    data-i18n="hero.btn1">Ver Catálogo</a>
+            <a href="cotizacion.html" class="btn btn--outline" data-i18n="hero.btn2">Solicitar Cotización</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: Banner_2 — Amazonía / Naturaleza
+         Posición: Izquierda inferior | Texto sobre overlay degradado lateral -->
+    <div class="slide slide--2" data-slide="1">
+      <div class="slide-bg">
+        <img src="img/1_Home/Banner_2.jpeg" alt="Selva amazónica al amanecer — origen de nuestras materias primas" class="slide-img" loading="lazy" />
+        <div class="slide-overlay slide-overlay--left-fade"></div>
+      </div>
+      <div class="slide-content slide-content--bottom-left">
+        <div class="slide-inner">
+          <p class="slide-badge">🌿 <span data-i18n="slide2.badge">Origen Natural</span></p>
+          <h2 class="slide-title slide-title--left">
+            <span class="st-accent" data-i18n="slide2.title1">Del corazón</span>
+            <span data-i18n="slide2.title2">de la Amazonía</span>
+            <span class="st-sub" data-i18n="slide2.title3">al mundo entero</span>
+          </h2>
+          <p class="slide-desc slide-desc--left" data-i18n="slide2.desc">322+ acres propios en la selva peruana. Cultivos orgánicos de plantas medicinales, cacao y café bajo los más altos estándares ecológicos.</p>
+          <div class="slide-actions">
+            <a href="infraestructura.html" class="btn btn--gold"    data-i18n="slide2.btn1">Ver Infraestructura</a>
+            <a href="quienes-somos.html"   class="btn btn--outline" data-i18n="slide2.btn2">Nuestra Historia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 3: Banner_1 — Dubai Digital Park (Sede)
+         Posición: Derecha | Texto sobre fondo semitransparente con borde dorado -->
+    <div class="slide slide--3" data-slide="2">
+      <div class="slide-bg">
+        <img src="img/1_Home/Banner_3.jpeg" alt="Sede Green Gold — Dubai Digital Park, Dubai Silicon Oasis" class="slide-img" loading="lazy" />
+        <div class="slide-overlay slide-overlay--right-panel"></div>
+      </div>
+      <div class="slide-content slide-content--right">
+        <div class="slide-inner slide-inner--card">
+          <p class="slide-badge slide-badge--gold">🇦🇪 <span data-i18n="slide3.badge">Sede Global</span></p>
+          <h2 class="slide-title slide-title--right">
+            <span data-i18n="slide3.title1">Dubai</span>
+            <span class="st-accent" data-i18n="slide3.title2">Silicon Oasis</span>
+          </h2>
+          <p class="slide-location">Building A1 · Dubai Digital Park · UAE</p>
+          <p class="slide-desc slide-desc--dark" data-i18n="slide3.desc">Nuestro cuartel general global coordina operaciones en 13+ países desde uno de los centros empresariales más estratégicos del mundo.</p>
+          <div class="slide-stats">
+            <div class="ss-item">
+              <span class="ss-n">+25</span>
+              <span class="ss-l" data-i18n="stats.exp">Años</span>
+            </div>
+            <div class="ss-div"></div>
+            <div class="ss-item">
+              <span class="ss-n">+13</span>
+              <span class="ss-l" data-i18n="stats.countries">Países</span>
+            </div>
+            <div class="ss-div"></div>
+            <div class="ss-item">
+              <span class="ss-n">+400</span>
+              <span class="ss-l" data-i18n="stats.prod">Productos</span>
+            </div>
+          </div>
+          <div class="slide-actions">
+            <a href="contacto.html"    class="btn btn--gold"         data-i18n="slide3.btn1">Contactar</a>
+            <a href="exportacion.html" class="btn btn--outline-dark" data-i18n="slide3.btn2">Exportación</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTROLES DEL SLIDER -->
+    <div class="slider-controls" aria-label="Controles del slider">
+      <button class="slider-arrow slider-arrow--prev" id="sliderPrev" aria-label="Slide anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <div class="slider-dots" role="tablist" aria-label="Slides">
+        <button class="sdot sdot--active" data-goto="0" role="tab" aria-selected="true"  aria-label="Slide 1"></button>
+        <button class="sdot"              data-goto="1" role="tab" aria-selected="false" aria-label="Slide 2"></button>
+        <button class="sdot"              data-goto="2" role="tab" aria-selected="false" aria-label="Slide 3"></button>
+      </div>
+      <button class="slider-arrow slider-arrow--next" id="sliderNext" aria-label="Slide siguiente">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg>
+      </button>
+    </div>
+
+    <!-- BARRA DE PROGRESO -->
+    <div class="slider-progress" aria-hidden="true">
+      <div class="slider-progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="hero-scroll" aria-hidden="true">
+      <span class="scroll-line"></span>
+      <span class="scroll-label" data-i18n="hero.scroll">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ESTADÍSTICAS -->
+  <div class="stats-band">
+    <div class="stats-band-inner">
+      <div class="sband-item">
+        <span class="sband-n" data-count="25">+25</span>
+        <span class="sband-l" data-i18n="stats.exp">Años de experiencia</span>
+      </div>
+      <div class="sband-sep"></div>
+      <div class="sband-item">
+        <span class="sband-n" data-count="400">+400</span>
+        <span class="sband-l" data-i18n="stats.prod">Productos naturales</span>
+      </div>
+      <div class="sband-sep"></div>
+      <div class="sband-item">
+        <span class="sband-n" data-count="1500">+1,500</span>
+        <span class="sband-l" data-i18n="stats.clients">Clientes satisfechos</span>
+      </div>
+      <div class="sband-sep"></div>
+      <div class="sband-item">
+        <span class="sband-n" data-count="13">+13</span>
+        <span class="sband-l" data-i18n="stats.countries">Países con presencia</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- GARANTÍA -->
+  <div class="guarantee-banner">
+    <div class="gb-inner">
+      <span class="gb-icon">✦</span>
+      <p data-i18n="guarantee.text">Si un producto no llega en las condiciones acordadas, se lo cambiamos o le devolvemos el <strong>100% de su dinero</strong>. Sin excusas. Sin demoras.</p>
+    </div>
+  </div>
+
+  <!-- SOBRE NOSOTROS -->
+  <section class="section" id="nosotros-preview">
+    <div class="container">
+      <div class="preview-grid">
+        <div class="preview-text fade-in">
+          <p class="section-eyebrow" data-i18n="about.eyebrow">Más de 25 años</p>
+          <h2 class="section-title" data-i18n="about.title">Una empresa con raíces en el campo</h2>
+          <p class="body-text" data-i18n="about.p1">Todo comienza en el campo. Antes de comercializar, se cultiva. Desde el año 2000 en Perú hasta nuestra sede global en Dubai en 2025, cada paso ha sido construido sobre décadas de confianza.</p>
+          <p class="body-text" data-i18n="about.p2">Con un equipo de ~150 personas y presencia en 4 continentes, conectamos productores de origen con importadores y distribuidores de todo el mundo.</p>
+          <a href="quienes-somos.html" class="btn btn--outline-dark" style="margin-top:8px;" data-i18n="about.link">Conocer nuestra historia →</a>
+        </div>
+        <div class="preview-cards fade-in">
+          <div class="mini-card">
+            <span class="mc-icon">🌿</span>
+            <div>
+              <p class="mc-title" data-i18n="cards.natural.title">Origen Natural</p>
+              <p class="mc-desc"  data-i18n="cards.natural.desc">Selva amazónica, Sierra andina, Brasil, Perú e India.</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-icon">🚢</span>
+            <div>
+              <p class="mc-title" data-i18n="cards.export.title">Exportación Global</p>
+              <p class="mc-desc"  data-i18n="cards.export.desc">Envíos aéreos y marítimos bajo EXW, FOB, CFR, CIF, DDP.</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-icon">✅</span>
+            <div>
+              <p class="mc-title" data-i18n="cards.cert.title">Certificado</p>
+              <p class="mc-desc"  data-i18n="cards.cert.desc">SERFOR, SENASA, HACCP, BPM, FDA, Fair Trade, Non-GMO.</p>
+            </div>
+          </div>
+          <div class="mini-card">
+            <span class="mc-icon">🏭</span>
+            <div>
+              <p class="mc-title" data-i18n="cards.infra.title">Infraestructura Real</p>
+              <p class="mc-desc"  data-i18n="cards.infra.desc">322+ acres en Amazonía + almacenes en Lima, Florida y Dubai.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="section section--dark" id="cats-preview">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow" data-i18n="cats.eyebrow">Catálogo 2026</p>
+        <h2 class="section-title"  data-i18n="cats.title">+400 Productos en 7 Categorías</h2>
+        <p class="section-desc"   data-i18n="cats.desc">Ingredientes botánicos para la industria nutracéutica, farmacéutica, cosmética y de alimentos funcionales.</p>
+      </div>
+      <div class="cats-strip">
+        <a href="productos.html" class="cs-item fade-in"><span>🌿</span><p data-i18n="cat.herbs">Hierbas Medicinales</p></a>
+        <a href="productos.html" class="cs-item fade-in"><span>☕</span><p data-i18n="cat.blends">Blends / Tés Mixtos</p></a>
+        <a href="productos.html" class="cs-item fade-in"><span>🌶</span><p data-i18n="cat.spices">Especias</p></a>
+        <a href="productos.html" class="cs-item fade-in"><span>🧪</span><p data-i18n="cat.extracts">Extractos</p></a>
+        <a href="productos.html" class="cs-item fade-in"><span>🍌</span><p data-i18n="cat.fruits">Frutas en Polvo</p></a>
+        <a href="productos.html" class="cs-item fade-in"><span>🌱</span><p data-i18n="cat.organic">Orgánicos</p></a>
+        <a href="productos.html" class="cs-item fade-in"><span>📦</span><p data-i18n="cat.others">Otros</p></a>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="productos.html" class="btn btn--gold fade-in" data-i18n="cats.btn">Ver catálogo completo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAÍSES -->
+  <section class="section" id="global-preview">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow" data-i18n="global.eyebrow">Presencia Global</p>
+        <h2 class="section-title"  data-i18n="global.title">Más de 13 países</h2>
+        <p class="section-desc"   data-i18n="global.desc">Operaciones activas en América, Europa, Asia y Oceanía.</p>
+      </div>
+      <div class="countries-grid fade-in">
+        <span>🇦🇪 UAE</span><span>🇺🇸 USA</span><span>🇵🇪 Perú</span><span>🇨🇦 Canadá</span>
+        <span>🇲🇽 México</span><span>🇧🇷 Brasil</span><span>🇬🇧 Reino Unido</span><span>🇳🇱 Holanda</span>
+        <span>🇨🇳 China</span><span>🇮🇳 India</span><span>🇵🇰 Pakistán</span><span>🇹🇭 Tailandia</span>
+        <span>🇮🇩 Indonesia</span><span>🇫🇯 Fiji</span>
+      </div>
+      <div style="text-align:center;margin-top:36px;" class="fade-in">
+        <a href="exportacion.html" class="btn btn--outline-dark" data-i18n="global.btn">Ver capacidades de exportación →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS CON IMAGEN -->
+  <section class="section section--grey" id="cat-photos">
+    <div class="container">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow" data-i18n="catphoto.eyebrow">Nuestras Categorías</p>
+        <h2 class="section-title"  data-i18n="catphoto.title">Ingredientes para cada industria</h2>
+        <p class="section-desc"    data-i18n="catphoto.desc">Seleccionados en origen, procesados con precisión y exportados con garantía de calidad total.</p>
+      </div>
+      <div class="cat-photo-grid">
+        <a href="productos.html" class="cat-photo-card fade-in">
+          <div class="cpc-img-wrap">
+            <img src="img/1_Home/Categoria_1.jpeg" alt="Hierbas medicinales y aromáticas" loading="lazy" />
+            <div class="cpc-overlay"></div>
+          </div>
+          <div class="cpc-body">
+            <span class="cpc-num">01</span>
+            <h3 class="cpc-title" data-i18n="cat.herbs">Hierbas Medicinales</h3>
+            <p class="cpc-desc"   data-i18n="catphoto.c1.desc">171 especies seleccionadas — manzanilla, cúrcuma, equinácea, ginseng y más.</p>
+            <span class="cpc-link" data-i18n="catphoto.ver">Ver productos →</span>
+          </div>
+        </a>
+        <a href="productos.html" class="cat-photo-card fade-in">
+          <div class="cpc-img-wrap">
+            <img src="img/1_Home/Categoria_2.jpeg" alt="Blends y tés mixtos" loading="lazy" />
+            <div class="cpc-overlay"></div>
+          </div>
+          <div class="cpc-body">
+            <span class="cpc-num">02</span>
+            <h3 class="cpc-title" data-i18n="cat.blends">Blends / Tés Mixtos</h3>
+            <p class="cpc-desc"   data-i18n="catphoto.c2.desc">13 blends funcionales — sueño, bienestar, energía, menopausia y más. Listos para marca propia.</p>
+            <span class="cpc-link" data-i18n="catphoto.ver">Ver productos →</span>
+          </div>
+        </a>
+        <a href="productos.html" class="cat-photo-card fade-in">
+          <div class="cpc-img-wrap">
+            <img src="img/1_Home/Categoria_3.jpeg" alt="Especias y condimentos premium" loading="lazy" />
+            <div class="cpc-overlay"></div>
+          </div>
+          <div class="cpc-body">
+            <span class="cpc-num">03</span>
+            <h3 class="cpc-title" data-i18n="cat.spices">Especias y Condimentos</h3>
+            <p class="cpc-desc"   data-i18n="catphoto.c3.desc">37 especias premium — azafrán, cardamomo, canela de Ceilán, jengibre y más.</p>
+            <span class="cpc-link" data-i18n="catphoto.ver">Ver productos →</span>
+          </div>
+        </a>
+        <a href="productos.html" class="cat-photo-card fade-in">
+          <div class="cpc-img-wrap">
+            <img src="img/1_Home/Categoria_4.jpeg" alt="Extractos y superalimentos" loading="lazy" />
+            <div class="cpc-overlay"></div>
+          </div>
+          <div class="cpc-body">
+            <span class="cpc-num">04</span>
+            <h3 class="cpc-title" data-i18n="cat.extracts">Extractos</h3>
+            <p class="cpc-desc"   data-i18n="catphoto.c4.desc">40 extractos estandarizados — matcha, açaí, guaraná, spirulina, clorela y más.</p>
+            <span class="cpc-link" data-i18n="catphoto.ver">Ver productos →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER INFERIOR — CALIDAD -->
+  <section class="quality-banner" id="quality-banner">
+    <div class="qb-img-wrap">
+      <img src="img/1_Home/Banner_inferior.jpeg" alt="Laboratorio botánico Green Gold — Control de calidad" loading="lazy" />
+      <div class="qb-overlay"></div>
+    </div>
+    <div class="qb-content">
+      <div class="qb-inner fade-in">
+        <p class="qb-eyebrow" data-i18n="qbanner.eyebrow">Estándares Internacionales</p>
+        <h2 class="qb-title" data-i18n="qbanner.title">Calidad que no admite compromisos</h2>
+        <p class="qb-desc"   data-i18n="qbanner.desc">Cada lote es analizado, certificado y trazado desde el origen hasta la entrega. Porque su cliente final lo merece.</p>
+        <div class="qb-certs">
+          <span class="qb-cert">✅ HACCP</span>
+          <span class="qb-cert">✅ BPM</span>
+          <span class="qb-cert">✅ SENASA</span>
+          <span class="qb-cert">✅ FDA</span>
+          <span class="qb-cert">✅ Fair Trade</span>
+          <span class="qb-cert">✅ Non-GMO</span>
+          <span class="qb-cert">✅ COA por lote</span>
+        </div>
+        <a href="calidad.html" class="btn btn--gold" data-i18n="qbanner.btn">Ver certificaciones completas</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--cta">
+    <div class="container">
+      <div class="cta-box fade-in">
+        <div class="cta-text">
+          <h2 class="cta-title" data-i18n="cta.title">¿Listo para hacer negocios?</h2>
+          <p class="cta-desc"  data-i18n="cta.desc">Respuesta en menos de 24 horas. Todos los idiomas. 365 días al año.<br/>Juan Manuel Narvarte y nuestro equipo están listos para atenderle.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="cotizacion.html" class="btn btn--gold" data-i18n="cta.btn1">Solicitar Cotización</a>
+          <a href="https://wa.me/971543977454" target="_blank" rel="noopener" class="btn btn--wa">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-mark">✦</div>
+          <div><span class="footer-brand-name">GREEN GOLD</span><span class="footer-brand-sub"> ENTERPRISES FZCo</span></div>
+        </div>
+        <p class="footer-slogan">"Global Sourcing. Natural Origins. Trusted Delivery."</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="footer-col-title" data-i18n="footer.company">Empresa</p>
+          <a href="quienes-somos.html"   data-i18n="nav.about">Quiénes Somos</a>
+          <a href="infraestructura.html" data-i18n="nav.infra">Infraestructura</a>
+          <a href="calidad.html"         data-i18n="nav.quality">Calidad</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title" data-i18n="footer.products">Productos</p>
+          <a href="productos.html"   data-i18n="nav.products">Catálogo</a>
+          <a href="exportacion.html" data-i18n="nav.export">Exportación</a>
+          <a href="cotizacion.html"  data-i18n="nav.quote">Cotización</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title" data-i18n="nav.contact">Contacto</p>
+          <a href="mailto:sales@greengoldenterprises.ae">sales@greengoldenterprises.ae</a>
+          <a href="https://wa.me/971543977454" target="_blank" rel="noopener">WhatsApp +971 54 397 7454</a>
+          <a href="contacto.html" data-i18n="footer.alloffices">Ver todas las sedes</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">© 2025 Green Gold Enterprises FZCo. Dubai, UAE. Todos los derechos reservados.</p>
+      <p>Building A1, Dubai Digital Park, Dubai Silicon Oasis, UAE</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="i18n.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>

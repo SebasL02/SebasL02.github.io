@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calidad — Green Gold Enterprises FZCo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="calidad.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-mark">✦</div>
+        <div class="nav-logo-text"><span class="nav-brand">GREEN GOLD</span><span class="nav-brand-sub">ENTERPRISES
+            FZCo</span></div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link" data-i18n="nav.home">Inicio</a></li>
+        <li><a href="quienes-somos.html" class="nav-link" data-i18n="nav.about">Quiénes Somos</a></li>
+        <li><a href="productos.html" class="nav-link" data-i18n="nav.products">Productos</a></li>
+        <li><a href="exportacion.html" class="nav-link" data-i18n="nav.export">Exportación</a></li>
+        <li><a href="infraestructura.html" class="nav-link" data-i18n="nav.infra">Infraestructura</a></li>
+        <li><a href="calidad.html" class="nav-link" data-i18n="nav.quality">Calidad</a></li>
+        <li><a href="cotizacion.html" class="nav-link" data-i18n="nav.quote">Cotización</a></li>
+        <li><a href="contacto.html" class="nav-link" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="lang-switcher">
+        <button class="lang-current" aria-label="Cambiar idioma" aria-haspopup="true" aria-expanded="false">
+          <span class="lang-flag">🇪🇸</span><span class="lang-code">ES</span>
+          <svg class="lang-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2.5">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+        <div class="lang-dropdown" role="menu">
+          <button class="lang-opt active" data-lang="es"><span>🇪🇸</span> Español</button>
+          <button class="lang-opt" data-lang="en"><span>🇬🇧</span> English</button>
+          <button class="lang-opt" data-lang="pt"><span>🇧🇷</span> Português</button>
+          <button class="lang-opt" data-lang="fr"><span>🇫🇷</span> Français</button>
+          <button class="lang-opt" data-lang="zh"><span>🇨🇳</span> 中文</button>
+          <button class="lang-opt" data-lang="ar"><span>🇦🇪</span> العربية</button>
+        </div>
+      </div>
+      <a href="cotizacion.html" class="nav-cta" data-i18n="nav.cta">Solicitar Cotización</a>
+      <button class="nav-burger" id="navBurger" aria-label="Menú"
+        aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <header class="cal-hero">
+    <div class="cal-hero__bg">
+      <img src="img/6_Calidad/Banner_superior.jpeg"
+        alt="Control de calidad — analista con hierbas medicinales en laboratorio" loading="eager" />
+      <div class="cal-hero__overlay"></div>
+    </div>
+    <div class="cal-hero__content">
+      <p class="ch-eyebrow" data-i18n="cal.ph.eyebrow">Estándares Internacionales</p>
+      <h1 class="ch-title" data-i18n="cal.ph.title"><span>Calidad</span></h1>
+      <p class="ch-desc" data-i18n="cal.ph.desc">La calidad no es un departamento — es nuestra filosofía de operación.
+        Más de 19 certificaciones vigentes.</p>
+      <div class="ch-stats">
+        <div class="chs-item"><span class="chs-n">19+</span><span class="chs-l"
+            data-i18n="cal.hero.certs">Certificaciones</span></div>
+        <div class="chs-sep"></div>
+        <div class="chs-item"><span class="chs-n">100%</span><span class="chs-l" data-i18n="cal.hero.lots">Lotes
+            analizados</span></div>
+        <div class="chs-sep"></div>
+        <div class="chs-item"><span class="chs-n">0</span><span class="chs-l" data-i18n="cal.hero.reject">Rechazos
+            garantía</span></div>
+      </div>
+    </div>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="index.html" data-i18n="nav.home">Inicio</a><span class="breadcrumb-sep">/</span>
+    <span data-i18n="cal.bread">Calidad</span>
+  </div>
+
+  <!-- ══ 1. CONTROL DE CALIDAD — split ══ -->
+  <section class="cal-split cal-split--img-right">
+    <div class="cal-split__text fade-in">
+      <p class="section-eyebrow" data-i18n="cal.ctrl.eyebrow">Proceso riguroso</p>
+      <h2 class="section-title" data-i18n="cal.ctrl.title">Control de Calidad</h2>
+      <p class="body-text" data-i18n="cal.ctrl.p1">Cada lote que procesamos pasa por un protocolo de análisis estricto
+        antes de ser aprobado para exportación. Pesaje de precisión, análisis organoléptico, pruebas microbiológicas y
+        detección de metales pesados — todo documentado y trazado.</p>
+      <p class="body-text" data-i18n="cal.ctrl.p2">Nuestro laboratorio propio garantiza resultados en 24–48 horas,
+        permitiendo tiempos de respuesta ágiles sin comprometer la rigurosidad del análisis.</p>
+      <div class="cal-process">
+        <div class="cp-step"><span class="cp-n">01</span>
+          <div><strong data-i18n="cal.step1.title">Recepción</strong>
+            <p data-i18n="cal.step1.desc">Inspección visual y pesaje de cada lote recibido del campo.</p>
+          </div>
+        </div>
+        <div class="cp-step"><span class="cp-n">02</span>
+          <div><strong data-i18n="cal.step2.title">Análisis</strong>
+            <p data-i18n="cal.step2.desc">Pruebas microbiológicas, metales pesados, humedad y perfil organoléptico.</p>
+          </div>
+        </div>
+        <div class="cp-step"><span class="cp-n">03</span>
+          <div><strong data-i18n="cal.step3.title">COA</strong>
+            <p data-i18n="cal.step3.desc">Emisión del Certificado de Análisis (COA) con todos los parámetros del lote.
+            </p>
+          </div>
+        </div>
+        <div class="cp-step"><span class="cp-n">04</span>
+          <div><strong data-i18n="cal.step4.title">Aprobación</strong>
+            <p data-i18n="cal.step4.desc">Liberación del lote para procesamiento, empaque y exportación.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="cal-split__img fade-in">
+      <img src="img/6_Calidad/Control_calidad.jpeg"
+        alt="Control de calidad — balanza de precisión y microscopio con muestras de hierbas" loading="lazy" />
+      <div class="cal-split__badge cal-split__badge--right">🔬 <span data-i18n="cal.ctrl.badge">Análisis por lote</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 2. LOGOS CERTIFICACIONES — full width ══ -->
+  <section class="cal-certs-img fade-in">
+    <div class="cal-certs-img__wrap">
+      <img src="img/6_Calidad/Logos_certificaciones.jpeg"
+        alt="Certificaciones internacionales Green Gold Enterprises — HACCP, FDA, Fair Trade, SENASA, SERFOR, Non-GMO, Organic, Kosher, Halal"
+        loading="lazy" />
+      <div class="cal-certs-img__overlay"></div>
+      <div class="cal-certs-img__caption">
+        <p class="cci-label" data-i18n="cal.certs.caption">19+ certificaciones activas · Más en proceso</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 3. GRUPOS DE CERTIFICACIONES ══ -->
+  <section class="cal-certs-section">
+    <div class="cal-certs__inner">
+      <div class="section-header fade-in">
+        <p class="section-eyebrow" data-i18n="cal.grp.eyebrow">Certificaciones vigentes</p>
+        <h2 class="section-title" data-i18n="cal.grp.title">Nuestras Acreditaciones</h2>
+        <p class="section-desc" data-i18n="cal.grp.desc">Certificaciones legales, de inocuidad, comerciales y documentos
+          de exportación disponibles para cada envío.</p>
+      </div>
+      <div class="cal-certs__grid">
+
+        <div class="ccg-group fade-in">
+          <div class="ccg-header"><span class="ccg-icon">⚖️</span>
+            <h3 data-i18n="cal.grp1.title">Legales y de Origen</h3>
+          </div>
+          <div class="ccg-badges">
+            <span class="ccg-badge ccg-badge--active">✅ SERFOR</span>
+            <span class="ccg-badge ccg-badge--active">✅ SENASA</span>
+            <span class="ccg-badge ccg-badge--active">✅ Cert. de Origen</span>
+            <span class="ccg-badge ccg-badge--active">✅ Cert. Libre Venta</span>
+            <span class="ccg-badge ccg-badge--active">✅ Cert. Fitosanitario</span>
+          </div>
+        </div>
+
+        <div class="ccg-group fade-in">
+          <div class="ccg-header"><span class="ccg-icon">🧪</span>
+            <h3 data-i18n="cal.grp2.title">Calidad e Inocuidad</h3>
+          </div>
+          <div class="ccg-badges">
+            <span class="ccg-badge ccg-badge--active">✅ BPM</span>
+            <span class="ccg-badge ccg-badge--active">✅ HACCP</span>
+            <span class="ccg-badge ccg-badge--active">✅ COA por lote</span>
+            <span class="ccg-badge ccg-badge--active">✅ Cert. Microbiológico</span>
+            <span class="ccg-badge ccg-badge--active">✅ Análisis Metales Pesados</span>
+            <span class="ccg-badge ccg-badge--active">✅ Ficha Técnica</span>
+          </div>
+        </div>
+
+        <div class="ccg-group fade-in">
+          <div class="ccg-header"><span class="ccg-icon">🌿</span>
+            <h3 data-i18n="cal.grp3.title">Comerciales</h3>
+          </div>
+          <div class="ccg-badges">
+            <span class="ccg-badge ccg-badge--active">✅ Fair Trade</span>
+            <span class="ccg-badge ccg-badge--active">✅ Non-GMO</span>
+            <span class="ccg-badge ccg-badge--active">✅ FDA Compliance</span>
+          </div>
+        </div>
+
+        <div class="ccg-group fade-in">
+          <div class="ccg-header"><span class="ccg-icon">📋</span>
+            <h3 data-i18n="cal.grp4.title">Documentos de Exportación</h3>
+          </div>
+          <div class="ccg-badges">
+            <span class="ccg-badge ccg-badge--active">✅ Factura Comercial</span>
+            <span class="ccg-badge ccg-badge--active">✅ Packing List</span>
+            <span class="ccg-badge ccg-badge--active">✅ Bill of Lading</span>
+            <span class="ccg-badge ccg-badge--active">✅ Declaración Aduanera</span>
+            <span class="ccg-badge ccg-badge--active">✅ Ficha Logística</span>
+          </div>
+        </div>
+
+        <div class="ccg-group ccg-group--pending fade-in">
+          <div class="ccg-header"><span class="ccg-icon">⏳</span>
+            <h3 data-i18n="cal.grp5.title">En Proceso</h3>
+          </div>
+          <div class="ccg-badges">
+            <span class="ccg-badge ccg-badge--pending">⏳ ISO 22000</span>
+            <span class="ccg-badge ccg-badge--pending">⏳ Cert. Orgánica</span>
+            <span class="ccg-badge ccg-badge--pending">⏳ HALAL</span>
+            <span class="ccg-badge ccg-badge--pending">⏳ KOSHER</span>
+            <span class="ccg-badge ccg-badge--pending">⏳ EFSA (Europa)</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 4. DOCUMENTACIÓN — split ══ -->
+  <section class="cal-split cal-split--img-left cal-split--grey">
+    <div class="cal-split__img fade-in">
+      <img src="img/6_Calidad/Documentacion_trazabilidad.jpeg" alt="Documentación de trazabilidad y exportación — Dubai"
+        loading="lazy" />
+      <div class="cal-split__badge">📄 <span data-i18n="cal.docs.badge">Trazabilidad total</span></div>
+    </div>
+    <div class="cal-split__text fade-in">
+      <p class="section-eyebrow" data-i18n="cal.docs.eyebrow">Documentación completa</p>
+      <h2 class="section-title" data-i18n="cal.docs.title">Trazabilidad de Origen a Destino</h2>
+      <p class="body-text" data-i18n="cal.docs.p1">Cada pedido llega acompañado de su paquete completo de documentación:
+        certificados de origen, análisis de laboratorio, fichas técnicas y todos los documentos aduaneros requeridos por
+        el país de destino.</p>
+      <p class="body-text" data-i18n="cal.docs.p2">La trazabilidad es total — desde el productor en el campo hasta la
+        entrega en la puerta del cliente, con código de lote y cadena de custodia documentada en cada etapa.</p>
+      <div class="cal-doclist">
+        <div class="cdl-item"><span>📜</span><span data-i18n="cal.doc.coa">COA (Certificate of Analysis) por lote</span>
+        </div>
+        <div class="cdl-item"><span>🌍</span><span data-i18n="cal.doc.origin">Certificado de Origen SENASA /
+            SERFOR</span></div>
+        <div class="cdl-item"><span>🌿</span><span data-i18n="cal.doc.phyto">Certificado Fitosanitario</span></div>
+        <div class="cdl-item"><span>🔬</span><span data-i18n="cal.doc.micro">Análisis Microbiológico</span></div>
+        <div class="cdl-item"><span>⚗️</span><span data-i18n="cal.doc.metals">Análisis de Metales Pesados</span></div>
+        <div class="cdl-item"><span>📋</span><span data-i18n="cal.doc.tds">Technical Data Sheet (TDS)</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 5. EMPAQUE FINAL — split ══ -->
+  <section class="cal-split cal-split--img-right cal-split--dark">
+    <div class="cal-split__text fade-in">
+      <p class="section-eyebrow" data-i18n="cal.pack.eyebrow">Presentación profesional</p>
+      <h2 class="section-title" data-i18n="cal.pack.title">Empaque Final & Private Label</h2>
+      <p class="body-text" data-i18n="cal.pack.p1">Ofrecemos empaque final con sellos de calidad verificados: Organic,
+        Vegan, Non-GMO, Gluten Free. Disponible en bolsas kraft con zip, frascos de vidrio ámbar, sachet de aluminio y a
+        granel.</p>
+      <p class="body-text" data-i18n="cal.pack.p2">También ofrecemos servicio de marca propia (private label) — su logo,
+        su diseño, nuestra calidad certificada. Ideal para marcas nutracéuticas, farmacéuticas y de suplementos que
+        buscan un socio de producción confiable.</p>
+      <div class="cal-pack-tags">
+        <span class="cpt-tag">🌿 Organic</span>
+        <span class="cpt-tag">🌱 Vegan</span>
+        <span class="cpt-tag">🚫 Non-GMO</span>
+        <span class="cpt-tag">🌾 Gluten Free</span>
+        <span class="cpt-tag">🏷️ Private Label</span>
+        <span class="cpt-tag">📦 Bulk</span>
+      </div>
+      <a href="cotizacion.html" class="btn btn--gold" style="margin-top:20px;" data-i18n="cta.btn1">Solicitar
+        Cotización</a>
+    </div>
+    <div class="cal-split__img fade-in">
+      <img src="img/6_Calidad/Empaque_final.jpeg"
+        alt="Empaque final — productos Green Gold con sellos Organic Vegan Non-GMO" loading="lazy" />
+      <div class="cal-split__badge cal-split__badge--right">🏷️ <span data-i18n="cal.pack.badge">Private Label
+          disponible</span></div>
+    </div>
+  </section>
+
+  <!-- ══ 6. FAIR PLAY — banner oscuro ══ -->
+  <section class="cal-fairplay">
+    <div class="cal-fairplay__inner">
+      <div class="section-header fade-in" style="text-align:center;">
+        <p class="section-eyebrow" style="color:var(--gold-light);" data-i18n="cal.fp.eyebrow">Filosofía de operación
+        </p>
+        <h2 class="section-title" style="color:#fff;" data-i18n="cal.fp.title">Fair Play Agrícola</h2>
+        <p class="section-desc" style="color:rgba(255,255,255,.6);" data-i18n="cal.fp.subtitle">Calidad que comienza
+          mucho antes del laboratorio — en la tierra, en el agua y en las personas.</p>
+      </div>
+      <div class="cal-fp__grid fade-in">
+        <div class="cfp-item">
+          <span class="cfp-icon">🌱</span>
+          <h4 data-i18n="cal.fp1.title">Sin Químicos</h4>
+          <p data-i18n="cal.fp1">Fertilizantes orgánicos en lugar de químicos sintéticos</p>
+        </div>
+        <div class="cfp-item">
+          <span class="cfp-icon">💧</span>
+          <h4 data-i18n="cal.fp2.title">Agua Responsable</h4>
+          <p data-i18n="cal.fp2">Uso responsable del agua en todas nuestras operaciones</p>
+        </div>
+        <div class="cfp-item">
+          <span class="cfp-icon">🔄</span>
+          <h4 data-i18n="cal.fp3.title">Rotación de Cultivos</h4>
+          <p data-i18n="cal.fp3">Rotación de cultivos para preservar la fertilidad del suelo</p>
+        </div>
+        <div class="cfp-item">
+          <span class="cfp-icon">♻️</span>
+          <h4 data-i18n="cal.fp4.title">Economía Circular</h4>
+          <p data-i18n="cal.fp4">Economía circular que elimina la quema de residuos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-mark">✦</div>
+          <div><span class="footer-brand-name">GREEN GOLD</span><span class="footer-brand-sub"> ENTERPRISES FZCo</span>
+          </div>
+        </div>
+        <p class="footer-slogan">"Global Sourcing. Natural Origins. Trusted Delivery."</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <p class="footer-col-title" data-i18n="footer.company">Empresa</p><a href="quienes-somos.html"
+            data-i18n="nav.about">Quiénes Somos</a><a href="infraestructura.html"
+            data-i18n="nav.infra">Infraestructura</a><a href="calidad.html" data-i18n="nav.quality">Calidad</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title" data-i18n="footer.products">Productos</p><a href="productos.html"
+            data-i18n="nav.products">Catálogo</a><a href="exportacion.html" data-i18n="nav.export">Exportación</a><a
+            href="cotizacion.html" data-i18n="nav.quote">Cotización</a>
+        </div>
+        <div class="footer-col">
+          <p class="footer-col-title" data-i18n="nav.contact">Contacto</p><a
+            href="mailto:sales@greengoldenterprises.ae">sales@greengoldenterprises.ae</a><a
+            href="https://wa.me/971543977454" target="_blank" rel="noopener">WhatsApp +971 54 397 7454</a><a
+            href="contacto.html" data-i18n="footer.alloffices">Ver todas las sedes</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p data-i18n="footer.copy">© 2025 Green Gold Enterprises FZCo. Dubai, UAE. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script src="i18n.js"></script>
+</body>
+
+</html>
